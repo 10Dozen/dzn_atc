@@ -1,0 +1,17 @@
+
+
+// =======================================================
+// ============= DZN_ATC Comm Menu Section ===============
+// =======================================================
+class CfgCommunicationMenu
+{
+    class dzn_atc_commMenu
+    {
+        text = "Call for Air Taxi";
+        icon = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\transport_ca.paa";
+        expression = "player setVariable ['dzn_atc_openedMenu', true];";
+        enable = "1";
+        removeAfterExpressionCall = 0;
+    };
+};
+// ============= END of DZN_ATC Comm Menu Section ===============
