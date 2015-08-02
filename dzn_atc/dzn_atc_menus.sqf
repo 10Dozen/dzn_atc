@@ -1,11 +1,9 @@
-
+// MENU
 waitUNtil {time  > 1 };
 
 private["_unitName","_menuLine"];
 
-dzn_atc_menu = [
-	["Air Taxi Call",false]
-];
+dzn_atc_menu = [["Air Taxi Call",false]];
 
 {
 	_unitName = _x call dzn_atc_fnc_getVehicleDisplayName;
