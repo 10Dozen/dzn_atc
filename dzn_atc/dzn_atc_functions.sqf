@@ -117,7 +117,8 @@ dzn_atc_fnc_hideCloseAreaMarker = {
 
 dzn_atc_fnc_callAirTaxi = {
 	// OpenMenu and allow to choose IP for air taxi and/or spawn it on init point
-
+	if (vehicle player != player) exitWith { player sideChat "Air Taxi Request Cancelled: You should be out of vehicle to request!"; };
+	
 	if (dzn_atc_useCustomPlacement) then {
 		call dzn_atc_fnc_showCloseAreaMarker;
 		openMap [true, false];
